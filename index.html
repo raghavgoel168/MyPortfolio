@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/56aee12602.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span>P</span>ortfolio.</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer & AI Enthusiast</p>
+            <h1>Hi, I'm <span>Raghav Goel</span><br>from India</h1>
+            <!-- <p>Passionate about building innovative solutions in machine learning, data analysis, and app development.</p> -->
+        </div>
+        
+    </div>
+</div>
+
+<!-- -----------about------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am a B.Tech student in Computer Science and Engineering at Bennett University with a strong foundation in programming languages and a passion for technology. I have experience in Machine Learning, Data Analysis, and Software Development, and I thrive in collaborative environments. I am committed to continuous learning and eager to apply my skills to tackle real-world challenges.
+                </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Languages and Databases:</span><br>Python, C++, SQL, MySQL, MongoDB, Firebase</li>
+                            <li><span>Tools:</span><br>Power BI, Git & GitHub, Flask, Excel, Figma</li>
+                            <li><span>Other Skills:</span><br>Machine Learning, UI/UX Designing, Flutter, NLP, Web Scraping, Business Analysis, Data Analysis</li>
+                        </ul>
+                    </div>                                       
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>NutriPlant</span><br>Developed a plant disease detection app using Flutter and CNN for accurate predictions.</li>
+                            <li><span>EDUAI</span><br>Created a personalized AI-based learning platform with integrated recommendation systems.</li>
+                            <li><span>Power BI Project on Zomato's Data</span><br>Visualized restaurant data using Power BI to analyze trends and insights.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Computer Science and Engineering</span><br>Bennett University, Greater Noida (2022-2026) - CGPA: 8.95</li>
+                            <li><span>Class XII</span><br>R.K. Educational School, Sikandrabad, UP - Percentage: 93.2%</li>
+                            <li><span>Class X</span><br>R.K. Educational School, Sikandrabad, UP - Percentage: 94%</li>
+                        </ul>
+                    </div>                    
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------services-------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analysis</h2>
+                <p>Analyzing and visualizing data to generate insights for decision-making using Power BI, SQL, and Excel.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brain"></i>
+                <h2>Machine Learning</h2>
+                <p>Developing machine learning models for predictions, recommendations, and personalized user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield"></i>
+                <h2>Natural Language Processing</h2>
+                <p>Creating intelligent applications with NLP capabilities for tasks like text analysis and automated responses.</p>
+                <a href="#">Learn more</a>
+            </div>
+            
+            <div>
+                <i class="fa-solid fa-paint-brush"></i>
+                <h2>UI/UX Design</h2>
+                <p>Designing engaging and intuitive interfaces for web and mobile applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>App Development</h2>
+                <p>Building cross-platform mobile apps using Flutter for seamless user experiences on Android and iOS.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Creating responsive and dynamic websites with a focus on user experience and performance.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------portfolio---------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/nutriplant.png" alt="NutriPlant App">
+                <div class="layer">
+                    <h3>NutriPlant – Plant Disease Detection App</h3>
+                    <p>Developed a Flutter app to capture leaf images and recommend plant diseases using CNN.</p>
+                    <a href="https://github.com/raghavgoel168/NutriPlant"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/eduai.jpeg" alt="EDUAI">
+                <div class="layer">
+                    <h3>EDUAI: Enhancing Personalized Learning</h3>
+                    <p>Created an AI-based learning platform with machine learning models for personalized content recommendations.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work">
+                <img src="images/kaayaclique.png" alt="Heart Disease Prediction">
+                <div class="layer">
+                    <h3>Heart Disease Prediction</h3>
+                    <p>Developed a model utilizing multiple algorithms to predict heart disease with 89% accuracy.</p>
+                    <a href="https://github.com/raghavgoel168/Heart_Disease_Prediction"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+            <div class="work">
+                <img src="images/kaayaclique.png" alt="KaayaClique">
+                <div class="layer">
+                    <h3>KaayaClique – AI-Powered Skincare Platform</h3>
+                    <p>Developed an AI-powered skincare recommendation platform for personalized skincare routines.</p>
+                    <a href="https://github.com/raghavgoel168/KaayaClique"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>        
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>raghavgoel168@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>8279819538</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/raghavgoel29/"><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    
+                </div>
+                <a href="images/Raghav Goel Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="copyright">
+        <p>Copyright</p>
+    </div> -->
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyDjKotI0NwFyOA2nIAtZwtEQPLqBM9MdXY27m7c_0e7e5isSJX6MvTtZhpDJddoM2B-Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
