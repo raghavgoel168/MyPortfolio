@@ -32,7 +32,7 @@
 </div>
 
 <!-- -----------about------------ -->
-<div id="about">
+<!-- <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -73,7 +73,84 @@
             </div>
         </div>
     </div>
+</div> -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am a B.Tech student in Computer Science and Engineering at Bennett University with a strong foundation in programming languages and a passion for technology. I have experience in Machine Learning, Data Analysis, and Software Development, and I thrive in collaborative environments. I am committed to continuous learning and eager to apply my skills to tackle real-world challenges.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <!-- <div class="tab-contents active-tab" id="skills">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 15px; background-color: #f3f3f3; padding: 10px; border-radius: 8px;"><strong>Languages:</strong><br>Python, C++, Java, SQL, JavaScript, HTML, CSS</li>
+                                <li style="margin-bottom: 15px; background-color: #f3f3f3; padding: 10px; border-radius: 8px;"><strong>Core Concepts:</strong><br>Data Structures & Algorithms, OOP, REST APIs</li>
+                                <li style="margin-bottom: 15px; background-color: #f3f3f3; padding: 10px; border-radius: 8px;"><strong>Tools:</strong><br>Power BI, Excel, Tableau, Git, GitHub, Figma, Postman, WordPress, MLflow</li>
+                                <li style="margin-bottom: 15px; background-color: #f3f3f3; padding: 10px; border-radius: 8px;"><strong>Data & ML Libraries:</strong><br>Pandas, NumPy, Scikit-Learn, NLTK</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul style="list-style-type: none; padding: 0;">
+                                <li style="margin-bottom: 15px; background-color: #f3f3f3; padding: 10px; border-radius: 8px;"><strong>Frameworks & Technologies:</strong><br>Flask, Flutter, CI/CD, Docker, React Native, AWS</li>
+                                <li style="margin-bottom: 15px; background-color: #f3f3f3; padding: 10px; border-radius: 8px;"><strong>Databases:</strong><br>MySQL, MongoDB, Firebase</li>
+                                <li style="margin-bottom: 15px; background-color: #f3f3f3; padding: 10px; border-radius: 8px;"><strong>Specializations:</strong><br>Data Analysis, Machine Learning, MLOps, Computer Vision, NLP, Web Scraping</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="tab-contents active-tab" id="skills">
+                    <div class="row">
+                        <div class="column" style="flex-basis: 48%;">
+                            <ul>
+                                <li><span>Languages:</span> Python, C++, Java, SQL, JavaScript, HTML, CSS</li>
+                                <li><span>Core Concepts:</span> Data Structures & Algorithms, OOP, REST APIs</li>
+                                <li><span>Tools:</span> Power BI, Excel, Tableau, Git, GitHub, Figma, Postman, WordPress, MLflow</li>
+                                <li><span>Data & ML Libraries:</span> Pandas, NumPy, Scikit-Learn, NLTK</li>
+                            </ul>
+                        </div>
+                        <div class="column" style="flex-basis: 48%;">
+                            <ul>
+                                <li><span>Frameworks & Technologies:</span> Flask, Flutter, CI/CD, Docker, React Native, AWS</li>
+                                <li><span>Databases:</span> MySQL, MongoDB, Firebase</li>
+                                <li><span>Specializations:</span> Data Analysis, Machine Learning, MLOps, Computer Vision, NLP, Web Scraping</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>NutriPlant</span><br>Developed a plant disease detection app using Flutter and CNN for accurate predictions.</li>
+                        <li><span>EDUAI</span><br>Created a personalized AI-based learning platform with integrated recommendation systems.</li>
+                        <li><span>Power BI Project on Zomato's Data</span><br>Visualized restaurant data using Power BI to analyze trends and insights.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech in Computer Science and Engineering</span><br>Bennett University, Greater Noida (2022-2026) - CGPA: 8.95</li>
+                        <li><span>Class XII</span><br>R.K. Educational School, Sikandrabad, UP - Percentage: 93.2%</li>
+                        <li><span>Class X</span><br>R.K. Educational School, Sikandrabad, UP - Percentage: 94%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 <!-- ---------------expertise-------------- -->
 
 <div id="services">
@@ -121,11 +198,12 @@
         </div>
     </div>
 </div>
-<!-- ----------------portfolio---------------- -->
+<!-- ----------------work---------------- -->
 
 <div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
+        <h2 class="sub-sub-title" style="margin: 40px 0 20px; color: #fff;">AI-ML Projects</h2>
         <div class="work-list">
             <div class="work">
                 <img src="images/nutriplant.png" alt="NutriPlant App">
@@ -159,7 +237,26 @@
                     <a href="https://github.com/raghavgoel168/KaayaClique"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
-        </div>        
+        </div>
+        <h2 class="sub-sub-title" style="margin: 60px 0 20px; color: #fff;">Dashboard Projects</h2>
+        <div class="work-list">
+            <!-- <div class="work">
+                <img src="images/zomatodashboard.png" alt="Zomato Dashboard">
+                <div class="layer">
+                    <h3>Zomato Restaurant Insights Dashboard</h3>
+                    <p>Visualized restaurant data using Power BI to analyze trends, ratings, cuisines, and user preferences.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+            <div class="work">
+                <img src="images/excel dashboard.png" alt="Vrinda Store Dashboard">
+                <div class="layer">
+                    <h3>Vrinda Store – Annual Excel Dashboard</h3>
+                    <p>Designed a dynamic Excel dashboard analyzing sales, orders, customer segments, and top-performing states and categories using charts and slicers.</p>
+                    <a href="https://1drv.ms/x/c/5e01bb7a69a9eb7f/EQwp8-tMI5dPnLgkshxjwMgBtAjLr_TPbjGSnnDxiyOuXA?e=R4WLEZ" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
         <a href="#" class="btn">See more</a>
     </div>
 </div>
